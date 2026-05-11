@@ -1,0 +1,23 @@
+#include <stdio.h>
+void findFactorial() 
+{
+int n;
+    long long fact = 1;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    if (n < 0)
+ {
+        printf("Factorial of negative numbers doesn't exist.\n");
+    } else {
+        for (int i = 1; i <= n; i++)
+ {
+            fact *= i;
+        }
+        printf("Factorial of %d = %lld\n", n, fact);
+    }
+}
+int main()
+ {
+    findFactorial();
+    return 0;
+}
